@@ -13,8 +13,6 @@ def spam(update,context):
 spam_handler = MessageHandler((~Filters.command),spam)
 dispatcher.add_handler(spam_handler)
 updater.start_webhook(listen="0.0.0.0",port=int(PORT),url_path=TOKEN)
-
-
-    updater.bot.setWebhook("https://"+APP +".herokuapp.com/" + TOKEN)
+updater.bot.setWebhook("https://"+APP +".herokuapp.com/" + TOKEN)
     #updater.start_polling()
-    updater.idle()
+updater.idle()
