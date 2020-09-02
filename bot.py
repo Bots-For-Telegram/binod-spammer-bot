@@ -4,7 +4,7 @@ import os
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 TOKEN = os.environ.get("TOKEN")
 PORT = int(os.environ.get("PORT",5000))
-APP = ""
+APP = "binod-spammer-bot"
 updater = Updater(TOKEN,use_context=True)
 dispatcher = updater.dispatcher
 def spam(update,context):
