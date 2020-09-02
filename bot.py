@@ -8,7 +8,7 @@ APP = "binod-spammer-bot"
 updater = Updater(TOKEN,use_context=True)
 dispatcher = updater.dispatcher
 def spam(update,context):
-  for i in range(100):
+  for i in range(29):
     context.bot.sendMessage(update.message.chat_id,text="Binod")
 spam_handler = MessageHandler((~Filters.command),spam)
 dispatcher.add_handler(spam_handler)
