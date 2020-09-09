@@ -12,7 +12,6 @@ def spam(update,context):
   for j in range(500):
     for i in range(20):
       context.bot.sendMessage(update.message.chat_id,text="Binod")
-      time.sleep(0.9)
     time.sleep(60)
 
 spam_handler = MessageHandler((~Filters.command),spam)
