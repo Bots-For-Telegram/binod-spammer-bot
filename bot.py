@@ -9,7 +9,7 @@ APP = os.environ.get("APP_NAME")
 updater = Updater(TOKEN,use_context=True)
 dispatcher = updater.dispatcher
 def spam(update,context):
-  for j in range(5):
+  for j in range(500):
     for i in range(20):
       context.bot.sendMessage(update.message.chat_id,text="Binod")
       time.sleep(0.9)
