@@ -15,7 +15,6 @@ def spam(update,context):
         context.bot.sendMessage(update.message.chat_id,text="Binod")
       except:
         pass  
-  time.sleep(60)
 
 spam_handler = MessageHandler((~Filters.command),spam)
 dispatcher.add_handler(spam_handler)
