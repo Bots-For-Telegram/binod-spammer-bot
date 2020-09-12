@@ -9,6 +9,7 @@ APP = os.environ.get("APP_NAME")
 updater = Updater(TOKEN,use_context=True)
 dispatcher = updater.dispatcher
 def spam(update,context):
+  print(update.message.chat_id)
   for j in range(5000):
     for i in range(20):
       try:
